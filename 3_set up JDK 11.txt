@@ -1,0 +1,32 @@
+﻿2026-11-20T21:55:23.5461060Z ##[group]Run actions/setup-java@v4
+2026-11-20T21:55:23.5462107Z with:
+2026-11-20T21:55:23.5462742Z   java-version: 11
+2026-11-20T21:55:23.5463444Z   distribution: temurin
+2026-11-20T21:55:23.5464344Z   cache: gradle
+2026-11-20T21:55:23.5465040Z   java-package: jdk
+2026-11-20T21:55:23.5465739Z   check-latest: false
+2026-11-20T21:55:23.5466455Z   server-id: github
+2026-11-20T21:55:23.5467172Z   server-username: GITHUB_ACTOR
+2026-11-20T21:55:23.5468010Z   server-password: GITHUB_TOKEN
+2026-11-20T21:55:23.5468847Z   overwrite-settings: true
+2026-11-20T21:55:23.5469617Z   job-status: success
+2026-11-20T21:55:23.5477163Z   token: ***
+2026-11-20T21:55:23.5477809Z ##[endgroup]
+2026-11-20T21:55:23.7120747Z ##[warning]setup-java v4 is deprecated and will no longer receive updates. Please migrate to actions/setup-java@v5.
+2026-11-20T21:55:23.7132292Z ##[group]Installed distributions
+2026-11-20T21:55:23.7167064Z Resolved Java 11.0.33+10 from tool-cache
+2026-11-20T21:55:23.7168278Z Setting Java 11.0.33+10 as the default
+2026-11-20T21:55:23.7176144Z (node:2245) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-20T21:55:23.7179107Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-20T21:55:23.7181097Z Creating toolchains.xml for JDK version 11 from temurin
+2026-11-20T21:55:23.7235835Z Writing to /home/runner/.m2/toolchains.xml
+2026-11-20T21:55:23.7236793Z 
+2026-11-20T21:55:23.7315906Z Java configuration:
+2026-11-20T21:55:23.7317192Z   Distribution: temurin
+2026-11-20T21:55:23.7318200Z   Version: 11.0.33+10
+2026-11-20T21:55:23.7319571Z   Path: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/11.0.33-10/x64
+2026-11-20T21:55:23.7320728Z 
+2026-11-20T21:55:23.7322082Z ##[endgroup]
+2026-11-20T21:55:23.7336801Z Creating settings.xml with server-id: github
+2026-11-20T21:55:23.7338320Z Writing to /home/runner/.m2/settings.xml
+2026-11-20T21:55:23.7490735Z ##[error]No file in /home/runner/work/al-rubaie-inventory/al-rubaie-inventory matched to [**/*.gradle*,**/gradle-wrapper.properties,buildSrc/**/Versions.kt,buildSrc/**/Dependencies.kt,gradle/*.versions.toml,**/versions.properties], make sure you have checked out the target repository
