@@ -1,0 +1,158 @@
+﻿2026-11-20T21:55:21.7753987Z Current runner version: '2.338.2'
+2026-11-20T21:55:21.7774279Z ##[group]Runner Image Provisioner
+2026-11-20T21:55:21.7775071Z Hosted Compute Agent
+2026-11-20T21:55:21.7775560Z Version: 20261111.635
+2026-11-20T21:55:21.7776110Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+2026-11-20T21:55:21.7776711Z Build Date: 2026-11-11T01:49:01Z
+2026-11-20T21:55:21.7777299Z Worker ID: {570c36d5-2238-4bd2-9911-5247cd8fdf33}
+2026-11-20T21:55:21.7777905Z Region: westus2
+2026-11-20T21:55:21.7778359Z Cloud: Azure
+2026-11-20T21:55:21.7778790Z ##[endgroup]
+2026-11-20T21:55:21.7779901Z ##[group]Operating System
+2026-11-20T21:55:21.7780481Z Ubuntu
+2026-11-20T21:55:21.7780964Z 26.04.1
+2026-11-20T21:55:21.7781395Z LTS
+2026-11-20T21:55:21.7781992Z ##[endgroup]
+2026-11-20T21:55:21.7782497Z ##[group]Runner Image
+2026-11-20T21:55:21.7783017Z Image: ubuntu-26.04
+2026-11-20T21:55:21.7783642Z Version: 20261116.202.1
+2026-11-20T21:55:21.7784672Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261116.202/images/ubuntu/Ubuntu2604-Readme.md
+2026-11-20T21:55:21.7785919Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261116.202
+2026-11-20T21:55:21.7786728Z ##[endgroup]
+2026-11-20T21:55:21.7787736Z ##[group]GITHUB_TOKEN Permissions
+2026-11-20T21:55:21.7789266Z Contents: read
+2026-11-20T21:55:21.7790133Z Metadata: read
+2026-11-20T21:55:21.7790642Z Packages: read
+2026-11-20T21:55:21.7791121Z ##[endgroup]
+2026-11-20T21:55:21.7793267Z Secret source: Actions
+2026-11-20T21:55:21.7794013Z Cache mode: write
+2026-11-20T21:55:21.7794679Z Prepare workflow directory
+2026-11-20T21:55:21.8052966Z Prepare all required actions
+2026-11-20T21:55:21.8091344Z Getting action download info
+2026-11-20T21:55:22.1388076Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-11-20T21:55:22.2409827Z Download action repository 'actions/setup-java@v4' (SHA:cf277c60eb25467037889841efdb72551f06f6c3)
+2026-11-20T21:55:22.6318690Z Complete job name: build
+2026-11-20T21:55:22.6975603Z ##[group]Run actions/checkout@v4
+2026-11-20T21:55:22.6976260Z with:
+2026-11-20T21:55:22.6976692Z   repository: mohammedalthanohi-hub/al-rubaie-inventory
+2026-11-20T21:55:22.6979765Z   token: ***
+2026-11-20T21:55:22.6980122Z   ssh-strict: true
+2026-11-20T21:55:22.6980491Z   ssh-user: git
+2026-11-20T21:55:22.6980862Z   persist-credentials: true
+2026-11-20T21:55:22.6981264Z   clean: true
+2026-11-20T21:55:22.6981776Z   sparse-checkout-cone-mode: true
+2026-11-20T21:55:22.6982202Z   fetch-depth: 1
+2026-11-20T21:55:22.6982548Z   fetch-tags: false
+2026-11-20T21:55:22.6982902Z   show-progress: true
+2026-11-20T21:55:22.6983256Z   lfs: false
+2026-11-20T21:55:22.6983589Z   submodules: false
+2026-11-20T21:55:22.6983957Z   set-safe-directory: true
+2026-11-20T21:55:22.6984365Z   allow-unsafe-pr-checkout: false
+2026-11-20T21:55:22.6984918Z ##[endgroup]
+2026-11-20T21:55:22.9546253Z Syncing repository: mohammedalthanohi-hub/al-rubaie-inventory
+2026-11-20T21:55:22.9547890Z ##[group]Getting Git version info
+2026-11-20T21:55:22.9548549Z Working directory is '/home/runner/work/al-rubaie-inventory/al-rubaie-inventory'
+2026-11-20T21:55:22.9549425Z [command]/usr/bin/git version
+2026-11-20T21:55:22.9571382Z git version 2.56.1
+2026-11-20T21:55:22.9587628Z ##[endgroup]
+2026-11-20T21:55:22.9599921Z Temporarily overriding HOME='/home/runner/work/_temp/a4c09e8c-3053-48c1-98d3-01da5993878f' before making global git config changes
+2026-11-20T21:55:22.9601855Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-20T21:55:22.9604444Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/al-rubaie-inventory/al-rubaie-inventory
+2026-11-20T21:55:22.9670352Z Deleting the contents of '/home/runner/work/al-rubaie-inventory/al-rubaie-inventory'
+2026-11-20T21:55:22.9672913Z ##[group]Initializing the repository
+2026-11-20T21:55:22.9677496Z [command]/usr/bin/git init /home/runner/work/al-rubaie-inventory/al-rubaie-inventory
+2026-11-20T21:55:22.9854585Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-20T21:55:22.9856117Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-20T21:55:22.9857211Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-20T21:55:22.9858122Z hint: call:
+2026-11-20T21:55:22.9858597Z hint:
+2026-11-20T21:55:22.9859197Z hint: 	git config --global init.defaultBranch <name>
+2026-11-20T21:55:22.9859939Z hint:
+2026-11-20T21:55:22.9860618Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-20T21:55:22.9861877Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-20T21:55:22.9862806Z hint:
+2026-11-20T21:55:22.9863304Z hint: 	git branch -m <name>
+2026-11-20T21:55:22.9863873Z hint:
+2026-11-20T21:55:22.9864609Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-20T21:55:22.9868648Z Initialized empty Git repository in /home/runner/work/al-rubaie-inventory/al-rubaie-inventory/.git/
+2026-11-20T21:55:22.9878931Z [command]/usr/bin/git remote add origin https://github.com/mohammedalthanohi-hub/al-rubaie-inventory
+2026-11-20T21:55:22.9930451Z ##[endgroup]
+2026-11-20T21:55:22.9931642Z ##[group]Disabling automatic garbage collection
+2026-11-20T21:55:22.9934202Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-20T21:55:22.9966028Z ##[endgroup]
+2026-11-20T21:55:22.9967029Z ##[group]Setting up auth
+2026-11-20T21:55:22.9972600Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-20T21:55:23.0004675Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-20T21:55:23.0466985Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-20T21:55:23.0496134Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-20T21:55:23.0736477Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-20T21:55:23.0765402Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-20T21:55:23.1005598Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-20T21:55:23.1039445Z ##[endgroup]
+2026-11-20T21:55:23.1046899Z ##[group]Fetching the repository
+2026-11-20T21:55:23.1048908Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +560f431e3124cffa595b70f6cf9a7f31107c9773:refs/remotes/origin/main
+2026-11-20T21:55:23.4816231Z From https://github.com/mohammedalthanohi-hub/al-rubaie-inventory
+2026-11-20T21:55:23.4817814Z  * [new ref]         560f431e3124cffa595b70f6cf9a7f31107c9773 -> origin/main
+2026-11-20T21:55:23.4833157Z ##[endgroup]
+2026-11-20T21:55:23.4833822Z ##[group]Determining the checkout info
+2026-11-20T21:55:23.4834882Z ##[endgroup]
+2026-11-20T21:55:23.4835577Z [command]/usr/bin/git sparse-checkout disable
+2026-11-20T21:55:23.4892166Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-20T21:55:23.4920597Z ##[group]Checking out the ref
+2026-11-20T21:55:23.4923803Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-11-20T21:55:23.5028061Z Switched to a new branch 'main'
+2026-11-20T21:55:23.5032957Z branch 'main' set up to track 'origin/main'.
+2026-11-20T21:55:23.5037532Z ##[endgroup]
+2026-11-20T21:55:23.5089766Z [command]/usr/bin/git log -1 --format=%H
+2026-11-20T21:55:23.5111238Z 560f431e3124cffa595b70f6cf9a7f31107c9773
+2026-11-20T21:55:23.5461087Z ##[group]Run actions/setup-java@v4
+2026-11-20T21:55:23.5462115Z with:
+2026-11-20T21:55:23.5462747Z   java-version: 11
+2026-11-20T21:55:23.5463448Z   distribution: temurin
+2026-11-20T21:55:23.5464351Z   cache: gradle
+2026-11-20T21:55:23.5465044Z   java-package: jdk
+2026-11-20T21:55:23.5465742Z   check-latest: false
+2026-11-20T21:55:23.5466459Z   server-id: github
+2026-11-20T21:55:23.5467175Z   server-username: GITHUB_ACTOR
+2026-11-20T21:55:23.5468014Z   server-password: GITHUB_TOKEN
+2026-11-20T21:55:23.5468850Z   overwrite-settings: true
+2026-11-20T21:55:23.5469621Z   job-status: success
+2026-11-20T21:55:23.5477166Z   token: ***
+2026-11-20T21:55:23.5477814Z ##[endgroup]
+2026-11-20T21:55:23.7120818Z ##[warning]setup-java v4 is deprecated and will no longer receive updates. Please migrate to actions/setup-java@v5.
+2026-11-20T21:55:23.7132317Z ##[group]Installed distributions
+2026-11-20T21:55:23.7167089Z Resolved Java 11.0.33+10 from tool-cache
+2026-11-20T21:55:23.7168372Z Setting Java 11.0.33+10 as the default
+2026-11-20T21:55:23.7176158Z (node:2245) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-20T21:55:23.7179117Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-20T21:55:23.7181103Z Creating toolchains.xml for JDK version 11 from temurin
+2026-11-20T21:55:23.7235861Z Writing to /home/runner/.m2/toolchains.xml
+2026-11-20T21:55:23.7236797Z 
+2026-11-20T21:55:23.7315959Z Java configuration:
+2026-11-20T21:55:23.7317200Z   Distribution: temurin
+2026-11-20T21:55:23.7318208Z   Version: 11.0.33+10
+2026-11-20T21:55:23.7319580Z   Path: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/11.0.33-10/x64
+2026-11-20T21:55:23.7320734Z 
+2026-11-20T21:55:23.7322092Z ##[endgroup]
+2026-11-20T21:55:23.7336824Z Creating settings.xml with server-id: github
+2026-11-20T21:55:23.7338329Z Writing to /home/runner/.m2/settings.xml
+2026-11-20T21:55:23.7490847Z ##[error]No file in /home/runner/work/al-rubaie-inventory/al-rubaie-inventory matched to [**/*.gradle*,**/gradle-wrapper.properties,buildSrc/**/Versions.kt,buildSrc/**/Dependencies.kt,gradle/*.versions.toml,**/versions.properties], make sure you have checked out the target repository
+2026-11-20T21:55:23.7826798Z Post job cleanup.
+2026-11-20T21:55:23.8948333Z (node:2257) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-20T21:55:23.8951232Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-20T21:55:23.9276973Z Post job cleanup.
+2026-11-20T21:55:23.9973767Z [command]/usr/bin/git version
+2026-11-20T21:55:24.0011464Z git version 2.56.1
+2026-11-20T21:55:24.0044368Z Temporarily overriding HOME='/home/runner/work/_temp/17212893-5d64-4841-888a-a9f5c345733a' before making global git config changes
+2026-11-20T21:55:24.0047886Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-20T21:55:24.0050887Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/al-rubaie-inventory/al-rubaie-inventory
+2026-11-20T21:55:24.0087449Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-20T21:55:24.0120552Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-20T21:55:24.0399286Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-20T21:55:24.0426316Z http.https://github.com/.extraheader
+2026-11-20T21:55:24.0457368Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-11-20T21:55:24.0490827Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-20T21:55:24.0754301Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-20T21:55:24.0783823Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-20T21:55:24.1143877Z Cleaning up orphan processes
+2026-11-20T21:55:24.1450386Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-java@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
